@@ -46,7 +46,7 @@ public class Create_new_incident {
 
     @When("^Navigate 'to Create Incident' page$")
     public void navigate_to_Create_Incident_page() throws Throwable {
-        webDriverProvider.driver.findElement(By.id("search_field")).sendKeys("so54fpp");
+        webDriverProvider.driver.findElement(By.id("search_field")).sendKeys("tester");
         webDriverProvider.driver.findElement(By.cssSelector(".search-button")).click();
         Thread.sleep(5000);
     }
@@ -54,7 +54,7 @@ public class Create_new_incident {
     @When("^Complete mandatory fields by entering \"([^\"]*)\" into Caller field and \"([^\"]*)\" into Short Description field$")
     public void complete_mandatory_fields_by_entering_into_Caller_field_and_into_Short_Description_field(String arg1, String arg2) throws Throwable {
         String package_title = webDriverProvider.driver.findElement(By.cssSelector(".package-title ")).getText();
-        Assert.assertEquals("factsheet", package_title);
+        Assert.assertEquals("test", package_title);
     }
 
     @When("^Add \"([^\"]*)\" in Description field$")
@@ -80,12 +80,12 @@ public class Create_new_incident {
     @When("^Click \"([^\"]*)\" to sign out$")
     public void click_to_sign_out(String arg1) throws Throwable {
         String package_title = webDriverProvider.driver.findElement(By.cssSelector(".package-title ")).getText();
-        Assert.assertEquals("factsheet", package_title);
+        Assert.assertEquals("test", package_title);
     }
 
     @Then("^Verify that user has succesfully logged out \"([^\"]*)\"$")
     public void verify_that_user_has_succesfully_logged_out(String arg1) throws Throwable {
         String package_title = webDriverProvider.driver.findElement(By.cssSelector(".package-title ")).getText();
-        Assert.assertEquals("factsheet", package_title);
+        Assert.assertEquals("test", package_title);
     }
 }

@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         format={"pretty", "html:target/report.html"},
-        features = {"classpath:MyCarCheck.feature"}
+        features = {"classpath:create-incident.feature"}
 )
 
 
