@@ -1,0 +1,20 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Feature: create-incident" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" singleton="false" nameIsGenerated="true">
+    <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+    <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/create-incident.feature" />
+    <option name="GLUE" value="src.test.instance" />
+    <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+    <module name="ui-automation" />
+    <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+    <option name="SUGGESTED_NAME" value="Feature: create-incident" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="cucumber.api.cli.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
